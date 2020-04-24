@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    active: qa
+
+---
+spring:
+  profiles: dev
+server:
+  port: 9090
+
+default:
+  course:
+    name: PHP
+    chapterCount: 3
+
+
+course:
+  name: Java
+  chapterCount: 30
+  rating: 10
+  author: Bijay
+
+---
+spring:
+  profiles: qa
+server:
+  port: 9191
+
+default:
+  course:
+    name: UI/UX
+    chapterCount: 10
+
+
+course:
+  name: Python
+  chapterCount: 30
+  rating: 10
+  author: Rajan
+
